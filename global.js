@@ -9,7 +9,7 @@ var icons = {
 	'MochiKit': 'mochikit.png',
 	'Prototype': 'prototype.png',
 	'Script.aculo.us': 'scriptaculous.png',
-	'Yahoo UI': 'yui.png',
+	'YUI': 'yui.png',
 	'Raphaël': 'raphael.png',
 	'Scripty2': 'scriptaculous.png'
 };

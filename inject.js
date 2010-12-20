@@ -12,7 +12,8 @@
 		'MochiKit.MochiKit.VERSION': 'MochiKit',
 		'Prototype.Version': 'Prototype',
 		'Scriptaculous.Version': 'Script.aculo.us',
-		'YAHOO.VERSION': 'Yahoo UI',
+		'YAHOO.VERSION': 'YUI', // YUI 2
+		'YUI.version': 'YUI', // YUI 3
 		'Raphael.version': 'Raphaël',
 		'S2.Version': 'Scripty2'
 	};
