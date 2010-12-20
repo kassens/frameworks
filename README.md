@@ -1,9 +1,11 @@
 About
 =====
 
-Inspired by bookmarklets like [WTFramework](http://nouincolor.com/wtframework/2.0/) [kassens](https://github.com/kassens) wrote this simple Chrome extension to display JavaScript frameworks used on a website.
+This Google Chrome extension displays JavaScript frameworks used on a website.
 
-*Version 5 updated by Fabian Beiner - added a few more frameworks, (hopefully) better icons and some CSS tweaks.*
+It can be found [here](https://chrome.google.com/extensions/detail/jgghnecdoiloelcogfmgjgcacadpaejf) in the Chrome extension library.
+
+It's inspired by bookmarklets like [WTFramework](http://nouincolor.com/wtframework/2.0/)
 
 Supported Frameworks
 ====================
@@ -28,3 +30,10 @@ Supported Frameworks
 * [Scripty2](http://scripty2.com/)
 * [YUI](http://developer.yahoo.com/yui/) *(version 2/3)*
 * [ZK](http://www.zkoss.org/)
+
+Authors
+=======
+(in order of first commit)
+
+* [Jan Kassens](https://github.com/kassens)
+* [Fabian Beiner](https://github.com/FabianBeiner)
