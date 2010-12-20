@@ -6,7 +6,7 @@ var icons = {
 	'Ext JS': 'extjs.png',
 	'jQuery': 'jquery.png',
 	'jQuery UI': 'jqueryui.png',
-	// 'MochiKit',
+	'MochiKit': 'mochikit.png',
 	'Prototype': 'prototype.png',
 	'Script.aculo.us': 'scriptaculous.png',
 	'Yahoo UI': 'yui.png',
