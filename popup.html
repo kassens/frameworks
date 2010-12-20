@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<script type="text/javascript" charset="utf-8">
+		function init(){
+			var hash = document.location.hash.substr(1);
+			var frameworks = JSON.parse(decodeURIComponent(hash));
+			var ul = document.getElementById('frameworks');
+			frameworks.forEach(function(framework){
+				var li = document.createElement('li');
+				li.textContent = framework.name;
+				var version = document.createElement('span');
+				version.textContent = ' (' + framework.version + ')';
+				li.appendChild(version);
+				ul.appendChild(li);
+			});
+		}
+		document.addEventListener('DOMContentLoaded', init, false);
+	</script>
+	<style type="text/css" media="screen">
+		* {
+			margin: 0;
+			padding: 0;
+			white-space: nowrap;
+		}
+		ul {
+			list-style: none;
+		}
+		li {
+			border-top: 1px solid #ccc;
+			padding: 5px;
+		}
+		li:first-child {
+			border-top: 0;
+		}
+		li span {
+			color: #777;
+		}
+	</style>
+</head>
+<body>
+	<ul id="frameworks"></li>
+</body>
+</html>

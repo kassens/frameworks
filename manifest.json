@@ -1,0 +1,23 @@
+{
+	"name": "Frameworks",
+	"version": "0.3",
+	"icons": {
+		"16": "images/logo16.png",
+		"48": "images/logo48.png",
+		"128": "images/logo128.png"
+	},
+	"description": "Displays Javascript frameworks used on a site.",
+	"background_page": "background.html",
+	"permissions": ["tabs"],
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	],
+	"page_action": {
+		"default_icon": "images/unknown.png",
+		"default_title": "Framework"
+	}
+}
