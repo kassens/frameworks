@@ -10,8 +10,10 @@
 				var li = document.createElement('li');
 				li.textContent = framework.name;
 				var version = document.createElement('span');
-				version.textContent = ' (' + framework.version + ')';
-				li.appendChild(version);
+				if (framework.version != 0) {
+					version.textContent = ' (' + framework.version + ')';
+					li.appendChild(version);
+				}
 				ul.appendChild(li);
 			});
 		}
