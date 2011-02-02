@@ -1,5 +1,4 @@
 // This script runs in the website context.
-// No prototype usage here, it's in the page context!
 (function(){
 	var fwList = {
 		'ActiveJS': 'ActiveSupport',
@@ -28,8 +27,8 @@
 		'Scripty2': 'S2.Version',
 		'SproutCore': 'SC.isReady',
 		'Spry': 'Spry.$',
-		'YUI 3': 'YUI.version',
 		'YUI 2': 'YAHOO.VERSION',
+		'YUI 3': 'YUI.version',
 		'Zepto': 'Zepto',
 		'ZK': 'zk.version'
 	};
@@ -42,7 +41,7 @@
 				exists = exists && exists[idents[i]];
 			}
 			if (exists) {
-				if ((typeof(exists) == 'string') && (exists != '%build%')) {
+				if (typeof(exists) == 'string' && exists != '%build%') {
 					data.push('{"name":"' + fwNs + '","version":"' + exists + '"}');
 				} else {
 					data.push('{"name":"' + fwNs + '","version":"0"}');

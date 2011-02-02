@@ -25,7 +25,8 @@ var icons = {
 	//'Scripty2': '',
 	//'SproutCore': 'SC.isReady',
 	//'Spry': 'Spry.$',
-	'YUI': 'yui.png',
+	'YUI 2': 'yui.png',
+	'YUI 3': 'yui.png',
 	//'Zepto': 'Zepto',
 	'ZK': 'zk.png'
 }
