@@ -1,57 +1,56 @@
 // This script runs in the website context.
 (function(){
-	var fwList = {
-		'ActiveJS': 'ActiveSupport',
-		'Base2': 'base2.version',
-		'Clientcide Libraries': 'Clientcide.version',
-		'Crafty': 'Crafty.init',
-		'DHTMLX': 'dhtmlx',
-		'Dojo': 'dojo.version',
-		'Ext JS': 'Ext.version',
-		'Glow': 'glow.VERSION',
-		'JavaScriptMVC': 'steal.fn',
-		'jQuery': 'jQuery.fn.jquery',
-		'jQuery UI': '$.ui.version',
-		'Midori': 'midori.domReady',
-		'MochiKit': 'MochiKit.MochiKit.VERSION',
-		'MooTools A.R.T.': 'ART.version',
-		'MooTools Core': 'MooTools.version',
-		'MooTools More': 'MooTools.More.version',
-		'Processing.js': 'Processing.version',
-		'Prototype': 'Prototype.Version',
-		'Qooxdoo': 'qx.$$libraries.qx.version',
-		'Raphaël': 'Raphael.version',
-		'Rico': 'Rico.Version',
-		'RightJS': 'RightJS.version',
-		'Script.aculo.us': 'Scriptaculous.Version',
-		'Scripty2': 'S2.Version',
-		'SproutCore': 'SC.isReady',
-		'Spry': 'Spry.$',
-		'YUI 2': 'YAHOO.VERSION',
-		'YUI 3': 'YUI.version',
-		'Zepto': 'Zepto',
-		'ZK': 'zk.version'
+	var frameworks = {
+		'ActiveJS':             {version: 'ActiveSupport'},
+		'Base2':                {version: 'base2.version'},
+		'Clientcide Libraries': {version: 'Clientcide.version', icon: 'clientcide-libraries.png'},
+		'Crafty':               {version: 'Crafty.init', icon: 'crafty.png'},
+		'DHTMLX':               {version: 'dhtmlx', icon: 'dhtmlx.png'},
+		'Dojo':                 {version: 'dojo.version', icon: 'dojo.png'},
+		'Ext JS':               {version: 'Ext.version', icon: 'ext-js.png'},
+		'Glow':                 {version: 'glow.VERSION', icon: 'glow.png'},
+		'JavaScriptMVC':        {version: 'steal.fn', icon: 'javascriptmvc.png'},
+		'jQuery':               {version: 'jQuery.fn.jquery', icon: 'jquery.png'},
+		'jQuery UI':            {version: '$.ui.version', icon: 'jquery-ui.png'},
+		'Midori':               {version: 'midori.domReady', icon: 'midori.png'},
+		'MochiKit':             {version: 'MochiKit.MochiKit.VERSION', icon: 'mochikit.png'},
+		'MooTools A.R.T.':      {version: 'ART.version'},
+		'MooTools Core':        {version: 'MooTools.version', icon: 'mootools.png'},
+		'MooTools More':        {version: 'MooTools.More.version', icon: 'mootools.png'},
+		'Processing.js':        {version: 'Processing.version', icon: 'processing-js.png'},
+		'Prototype':            {version: 'Prototype.Version', icon: 'prototype.png'},
+		'Qooxdoo':              {version: 'qx.$$libraries.qx.version', icon: 'qooxdoo.png'},
+		'Raphaël':              {version: 'Raphael.version', icon: 'raphael.png'},
+		'Rico':                 {version: 'Rico.Version', icon: 'rico.png'},
+		'RightJS':              {version: 'RightJS.version', icon: 'rightjs.png'},
+		'Script.aculo.us':      {version: 'Scriptaculous.Version', icon: 'scriptaculous.png'},
+		'Scripty2':             {version: 'S2.Version'},
+		'SproutCore':           {version: 'SC.isReady'},
+		'Spry':                 {version: 'Spry.$'},
+		'YUI 2':                {version: 'YAHOO.VERSION', icon: 'yui.png'},
+		'YUI 3':                {version: 'YUI.version', icon: 'yui.png'},
+		'Zepto':                {version: 'Zepto'},
+		'ZK':                   {version: 'zk.version', icon: 'zk.png'}
 	};
 
 	var data = [];
-	for (var fwNs in fwList) {
-		if (fwList.hasOwnProperty(fwNs)) {
-			var exists = window;
-			for (var i = 0, idents = fwList[fwNs].split('.'); i < idents.length; i++) {
-				exists = exists && exists[idents[i]];
-			}
-			if (exists) {
-				if (typeof(exists) == 'string' && exists != '%build%') {
-					data.push('{"name":"' + fwNs + '","version":"' + exists + '"}');
-				} else {
-					data.push('{"name":"' + fwNs + '","version":"0"}');
-				}
+	for (var name in frameworks) {
+		if (frameworks.hasOwnProperty(name)) {
+			var framework = frameworks[name];
+			var version = framework.version.split('.').reduce(function(scope, part){
+				return scope && scope[part];
+			}, window);
+			if (version) {
+				var info = {name: name};
+				if (framework.icon) info.icon = framework.icon;
+				if (typeof(version) == 'string' && version != '%build%') info.version = version;
+				data.push(info);
 			}
 		}
 	}
 
 	var messageElement = document.createElement('div');
-	messageElement.textContent = '[' + data.join(',') + ']';
+	messageElement.textContent = JSON.stringify(data);
 	messageElement.id = 'frameworks-data';
 	document.body.appendChild(messageElement);
 })();

@@ -9,8 +9,8 @@
 			frameworks.forEach(function(framework){
 				var li = document.createElement('li');
 				li.textContent = framework.name;
-				var version = document.createElement('span');
-				if (framework.version != 0) {
+				if (framework.version) {
+					var version = document.createElement('span');
 					version.textContent = ' (' + framework.version + ')';
 					li.appendChild(version);
 				}
