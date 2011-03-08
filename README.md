@@ -32,6 +32,7 @@ Supported Frameworks
 * [Raphaël](http://raphaeljs.com/)
 * [Rico](http://openrico.org/)
 * [RightJS](http://rightjs.org/)
+* [Sammy.js](http://sammyjs.org/)
 * [Script.aculo.us](http://script.aculo.us/)
 * [Scripty2](http://scripty2.com/)
 * [SproutCore](http://www.sproutcore.com/) *

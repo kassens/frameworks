@@ -32,6 +32,7 @@
 		'Raphaël':              {version: ['Raphael', 'version'],                 icon: 'raphael.png'              },
 		'Rico':                 {version: ['Rico', 'Version'],                    icon: 'rico.png'                 },
 		'RightJS':              {version: ['RightJS', 'version'],                 icon: 'rightjs.png'              },
+		'Sammy.js':             {version: ['Sammy', 'VERSION'],                   icon: 'sammy.png'                },
 		'Script.aculo.us':      {version: ['Scriptaculous', 'Version'],           icon: 'scriptaculous.png'        },
 		'Scripty2':             {version: ['S2', 'Version']                                                        },
 		'SproutCore':           {version: ['SC', 'isReady']                                                        },
