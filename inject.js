@@ -15,7 +15,7 @@
 		'Clientcide Libraries': {version: ['Clientcide', 'version'],              icon: 'clientcide-libraries.png' },
 		'Crafty':               {version: ['Crafty', 'init'],                     icon: 'crafty.png'               },
 		'DHTMLX':               {version: ['dhtmlx'],                             icon: 'dhtmlx.png'               },
-		'Dojo':                 {version: ['dojo', 'version'],                    icon: 'dojo.png'                 },
+		'Dojo':                 {version: ['dojo', 'version', 'toString'],        icon: 'dojo.png'                 },
 		'Ext JS':               {version: ['Ext', 'version'],                     icon: 'ext-js.png'               },
 		'Glow':                 {version: ['glow', 'VERSION'],                    icon: 'glow.png'                 },
 		'JavaScriptMVC':        {version: ['steal', 'fn'],                        icon: 'javascriptmvc.png'        },
@@ -59,6 +59,9 @@
 				if (typeof version == 'string' && version != '%build%') {
 					info += ',"version":"' + version + '"';
 				}
+                                if (typeof version == 'function') {
+                                	info += ',"version";"' + version() + '"';
+                                }
 				info += '}';
 				data[data.length] = info;
 			}
