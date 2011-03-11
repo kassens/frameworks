@@ -60,7 +60,7 @@
 					info += ',"version":"' + version + '"';
 				}
                                 if (typeof version == 'function') {
-                                	info += ',"version";"' + version() + '"';
+                                	info += ',"version":"' + version() + '"';
                                 }
 				info += '}';
 				data[data.length] = info;
