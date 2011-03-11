@@ -15,7 +15,12 @@
 		'Clientcide Libraries': {version: ['Clientcide', 'version'],              icon: 'clientcide-libraries.png' },
 		'Crafty':               {version: ['Crafty', 'init'],                     icon: 'crafty.png'               },
 		'DHTMLX':               {version: ['dhtmlx'],                             icon: 'dhtmlx.png'               },
-		'Dojo':                 {version: ['dojo', 'version'],                    icon: 'dojo.png'                 },
+		'Dojo': {
+			version: function() {
+				return (window.dojo && dojo.version && dojo.version.toString) ? dojo.version.toString() : false;
+			},
+			icon: 'dojo.png'
+		},
 		'Ext JS':               {version: ['Ext', 'version'],                     icon: 'ext-js.png'               },
 		'Glow':                 {version: ['glow', 'VERSION'],                    icon: 'glow.png'                 },
 		'JavaScriptMVC':        {version: ['steal', 'fn'],                        icon: 'javascriptmvc.png'        },
@@ -47,9 +52,14 @@
 	for (var name in frameworks) {
 		if (frameworks.hasOwnProperty(name)) {
 			var framework = frameworks[name];
-			var version = window;
-			for (var i = 0; i < framework.version.length; i++) {
-				version = version && version[framework.version[i]];
+			var version;
+			if (typeof framework.version == 'function') {
+				version = framework.version();
+			} else {
+				version = window;
+				for (var i = 0; i < framework.version.length; i++) {
+					version = version && version[framework.version[i]];
+				}
 			}
 			if (version) {
 				var info = '{"name":"' + name + '"';
