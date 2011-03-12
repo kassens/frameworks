@@ -49,3 +49,4 @@ Authors
 
 * [Jan Kassens](https://github.com/kassens)
 * [Fabian Beiner](https://github.com/FabianBeiner)
+* [Anton Suprun](https://github.com/kpobococ)
