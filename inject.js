@@ -40,6 +40,7 @@
 		'Sammy.js':             {version: ['Sammy', 'VERSION'],                   icon: 'sammy.png'                },
 		'Script.aculo.us':      {version: ['Scriptaculous', 'Version'],           icon: 'scriptaculous.png'        },
 		'Scripty2':             {version: ['S2', 'Version']                                                        },
+		'Snack':                {version: ['snack', 'v']                                                           },
 		'SproutCore':           {version: ['SC', 'isReady']                                                        },
 		'Spry':                 {version: ['Spry', '$']                                                            },
 		'YUI 2':                {version: ['YAHOO', 'VERSION'],                   icon: 'yui.png'                  },
