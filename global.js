@@ -6,9 +6,9 @@ chrome.extension.onRequest.addListener(function(frameworks, sender){
 
 	var title = frameworks.map(function(framework){
 		if (framework.version) {
-			return framework.name;
-		} else {
 			return framework.name + ' (' + framework.version + ')';
+		} else {
+			return framework.name;
 		}
 	}).join('\n');
 	chrome.pageAction.setTitle({tabId: tabId, title: title});
