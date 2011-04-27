@@ -35,6 +35,7 @@ Supported Frameworks
 * [Sammy.js](http://sammyjs.org/)
 * [Script.aculo.us](http://script.aculo.us/)
 * [Scripty2](http://scripty2.com/)
+* [Snack](http://snackjs.com/)
 * [SproutCore](http://www.sproutcore.com/) *
 * [Spry](http://labs.adobe.com/technologies/spry/) *
 * [YUI](http://developer.yahoo.com/yui/) *(version 2/3)*
