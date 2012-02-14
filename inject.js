@@ -11,6 +11,7 @@
 
 	var frameworks = {
 		'ActiveJS':             {version: ['ActiveSupport']                                                        },
+		'Backbone.js':          {version: ['Backbone', 'VERSION'],                icon: 'backbone.png'             },
 		'Base2':                {version: ['base2', 'version']                                                     },
 		'Clientcide Libraries': {version: ['Clientcide', 'version'],              icon: 'clientcide-libraries.png' },
 		'Crafty':               {version: ['Crafty', 'init'],                     icon: 'crafty.png'               },
@@ -41,8 +42,10 @@
 		'Script.aculo.us':      {version: ['Scriptaculous', 'Version'],           icon: 'scriptaculous.png'        },
 		'Scripty2':             {version: ['S2', 'Version']                                                        },
 		'Snack':                {version: ['snack', 'v']                                                           },
+		'Spine':                {version: ['Spine', 'version']                                                     },
 		'SproutCore':           {version: ['SC', 'isReady']                                                        },
 		'Spry':                 {version: ['Spry', '$']                                                            },
+		'Underscore.js':        {version: ['_', 'VERSION'],                                                        },
 		'YUI 2':                {version: ['YAHOO', 'VERSION'],                   icon: 'yui.png'                  },
 		'YUI 3':                {version: ['YUI', 'version'],                     icon: 'yui.png'                  },
 		'Zepto':                {version: ['Zepto']                                                                },

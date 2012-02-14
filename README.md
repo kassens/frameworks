@@ -11,6 +11,7 @@ Supported Frameworks
 ====================
 
 * [ActiveJS](http://activejs.org/) *
+* [Backbone.js](http://documentcloud.github.com/backbone/)
 * [Base2](http://code.google.com/p/base2/)
 * [Clientcide Libraries](http://www.clientcide.com/wiki/)
 * [Crafty](http://craftyjs.com/) *
@@ -36,8 +37,10 @@ Supported Frameworks
 * [Script.aculo.us](http://script.aculo.us/)
 * [Scripty2](http://scripty2.com/)
 * [Snack](http://snackjs.com/)
+* [Spine](http://spinejs.com/)
 * [SproutCore](http://www.sproutcore.com/) *
 * [Spry](http://labs.adobe.com/technologies/spry/) *
+* [Underscore.js](http://documentcloud.github.com/underscore/)
 * [YUI](http://developer.yahoo.com/yui/) *(version 2/3)*
 * [Zepto](http://zeptojs.com/) *
 * [ZK](http://www.zkoss.org/)
