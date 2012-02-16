@@ -10,57 +10,54 @@
 	}
 
 	var frameworks = {
-		'ActiveJS':             {version: ['ActiveSupport']                                                        },
-		'Backbone.js':          {version: ['Backbone', 'VERSION'],                icon: 'backbone.png'             },
-		'Base2':                {version: ['base2', 'version']                                                     },
-		'Clientcide Libraries': {version: ['Clientcide', 'version'],              icon: 'clientcide-libraries.png' },
-		'Crafty':               {version: ['Crafty', 'init'],                     icon: 'crafty.png'               },
-		'd3.js':                {version: ['d3', 'version']                                                        },
-		'DHTMLX':               {version: ['dhtmlx'],                             icon: 'dhtmlx.png'               },
-		'Dojo': {
-			version: function() {
-				return (window.dojo && dojo.version && dojo.version.toString) ? dojo.version.toString() : false;
-			},
-			icon: 'dojo.png'
-		},
-		'Ember':                {version: ['Ember', 'VERSION']                                                     },
-		'Ext JS':               {version: ['Ext', 'version'],                     icon: 'ext-js.png'               },
-		'Glow':                 {version: ['glow', 'VERSION'],                    icon: 'glow.png'                 },
-		'JavaScriptMVC':        {version: ['steal', 'fn'],                        icon: 'javascriptmvc.png'        },
-		'jQuery':               {version: ['jQuery', 'fn', 'jquery'],             icon: 'jquery.png'               },
-		'jQuery UI':            {version: ['$', 'ui', 'version'],                 icon: 'jquery-ui.png'            },
-		'Midori':               {version: ['midori', 'domReady'],                 icon: 'midori.png'               },
-		'MochiKit':             {version: ['MochiKit', 'MochiKit', 'VERSION'],    icon: 'mochikit.png'             },
-		'MooTools A.R.T.':      {version: ['ART', 'version']                                                       },
-		'MooTools Core':        {version: ['MooTools', 'version'],                icon: 'mootools.png'             },
-		'MooTools More':        {version: ['MooTools', 'More', 'version'],        icon: 'mootools.png'             },
-		'Processing.js':        {version: ['Processing', 'version'],              icon: 'processing-js.png'        },
-		'Prototype':            {version: ['Prototype', 'Version'],               icon: 'prototype.png'            },
-		'Qooxdoo':              {version: ['qx', '$$libraries', 'qx', 'version'], icon: 'qooxdoo.png'              },
-		'Raphaël':              {version: ['Raphael', 'version'],                 icon: 'raphael.png'              },
-		'Rico':                 {version: ['Rico', 'Version'],                    icon: 'rico.png'                 },
-		'RightJS':              {version: ['RightJS', 'version'],                 icon: 'rightjs.png'              },
-		'Sammy.js':             {version: ['Sammy', 'VERSION'],                   icon: 'sammy.png'                },
-		'Script.aculo.us':      {version: ['Scriptaculous', 'Version'],           icon: 'scriptaculous.png'        },
-		'Scripty2':             {version: ['S2', 'Version']                                                        },
-		'Snack':                {version: ['snack', 'v']                                                           },
-		'Spine':                {version: ['Spine', 'version']                                                     },
-		'SproutCore':           {version: ['SC', 'isReady']                                                        },
-		'Spry':                 {version: ['Spry', '$']                                                            },
-		'Underscore.js':        {version: ['_', 'VERSION'],                                                        },
-		'YUI 2':                {version: ['YAHOO', 'VERSION'],                   icon: 'yui.png'                  },
-		'YUI 3':                {version: ['YUI', 'version'],                     icon: 'yui.png'                  },
-		'Zepto':                {version: ['Zepto']                                                                },
-		'ZK':                   {version: ['zk', 'version'],                      icon: 'zk.png'                   }
+		'ActiveJS':             { abbr: 'AJS',  version: ['ActiveSupport']                      },
+		'Backbone.js':          { abbr: 'BB',   version: ['Backbone', 'VERSION'],               },
+		'Base2':                { abbr: 'Base', version: ['base2', 'version']                   },
+		'Clientcide Libraries': { abbr: 'Moo',  version: ['Clientcide', 'version'],             },
+		'Crafty':               { abbr: 'Crf',  version: ['Crafty', 'init'],                    },
+		'D3':                   { abbr: 'D3',   version: ['d3', 'version']                      },
+		'DHTMLX':               { abbr: 'DHT',  version: ['dhtmlx'],                            },
+		'Dojo':                 { abbr: 'Dojo', version: function() { return dojo.version.toString(); } },
+		'Ember':                { abbr: 'Emb',  version: ['Ember', 'VERSION']                   },
+		'Ext JS':               { abbr: 'Ext',  version: ['Ext', 'version'],                    },
+		'Glow':                 { abbr: 'Glw',  version: ['glow', 'VERSION'],                   },
+		'JavaScriptMVC':        { abbr: 'MVC',  version: ['steal', 'fn'],                       },
+		'jQuery':               { abbr: 'jQ',   version: ['jQuery', 'fn', 'jquery'],            },
+		'jQuery UI':            { abbr: 'jQUI', version: ['$', 'ui', 'version'],                },
+		'Midori':               { abbr: 'Mid',  version: ['midori', 'domReady'],                },
+		'MochiKit':             { abbr: 'MK',   version: ['MochiKit', 'MochiKit', 'VERSION'],   },
+		'MooTools A.R.T.':      { abbr: 'Moo',  version: ['ART', 'version']                     },
+		'MooTools Core':        { abbr: 'Moo',  version: ['MooTools', 'version'],               },
+		'MooTools More':        { abbr: 'Moo',  version: ['MooTools', 'More', 'version'],       },
+		'Processing.js':        { abbr: 'Prc',  version: ['Processing', 'version'],             },
+		'Prototype':            { abbr: 'Pro',  version: ['Prototype', 'Version'],              },
+		'Qooxdoo':              { abbr: 'Qxd',  version: ['qx', '$$libraries', 'qx', 'version'] },
+		'Raphaël':              { abbr: 'Rël',  version: ['Raphael', 'version'],                },
+		'Rico':                 { abbr: 'Ric',  version: ['Rico', 'Version'],                   },
+		'RightJS':              { abbr: 'Rig',  version: ['RightJS', 'version'],                },
+		'Sammy.js':             { abbr: 'Sam',  version: ['Sammy', 'VERSION'],                  },
+		'Script.aculo.us':      { abbr: 'Scr',  version: ['Scriptaculous', 'Version'],          },
+		'Scripty2':             { abbr: 'Sc2',  version: ['S2', 'Version']                      },
+		'Snack':                { abbr: 'Snc',  version: ['snack', 'v']                         },
+		'Spine':                { abbr: 'Spi',  version: ['Spine', 'version']                   },
+		'SproutCore':           { abbr: 'SpC',  version: ['SC', 'isReady']                      },
+		'Spry':                 { abbr: 'Spr',  version: ['Spry', '$']                          },
+		'Underscore.js':        { abbr: '_',    version: ['_', 'VERSION'],                      },
+		'YUI 2':                { abbr: 'YUI',  version: ['YAHOO', 'VERSION'],                  },
+		'YUI 3':                { abbr: 'YUI',  version: ['YUI', 'version'],                    },
+		'Zepto':                { abbr: 'Zept', version: ['Zepto']                              },
+		'ZK':                   { abbr: 'ZK',   version: ['zk', 'version'],                     }
 	};
 
 	var data = [];
 	for (var name in frameworks) {
 		if (frameworks.hasOwnProperty(name)) {
 			var framework = frameworks[name];
-			var version;
+			var version = null;
 			if (typeof framework.version == 'function') {
-				version = framework.version();
+				try {
+					version = framework.version();
+				} catch (e) { }
 			} else {
 				version = window;
 				for (var i = 0; i < framework.version.length; i++) {
@@ -69,9 +66,7 @@
 			}
 			if (version) {
 				var info = '{"name":"' + name + '"';
-				if (framework.icon) {
-					info += ',"icon":"' + framework.icon + '"';
-				}
+				info += ',"abbr":"' + framework.abbr + '"';
 				if (typeof version == 'string' && version != '%build%') {
 					info += ',"version":"' + version + '"';
 				}
