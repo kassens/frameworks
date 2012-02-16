@@ -15,8 +15,10 @@ Supported Frameworks
 * [Base2](http://code.google.com/p/base2/)
 * [Clientcide Libraries](http://www.clientcide.com/wiki/)
 * [Crafty](http://craftyjs.com/) *
+* [d3.js](http://mbostock.github.com/d3/)
 * [DHTMLX](http://www.dhtmlx.com/) *
 * [Dojo](http://dojotoolkit.org/)
+* [Ember](http://emberjs.com/)
 * [Ext JS](http://www.sencha.com/)
 * [Glow](http://www.bbc.co.uk/glow/)
 * [JavaScriptMVC](http://javascriptmvc.com/) *

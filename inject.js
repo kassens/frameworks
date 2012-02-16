@@ -15,6 +15,7 @@
 		'Base2':                {version: ['base2', 'version']                                                     },
 		'Clientcide Libraries': {version: ['Clientcide', 'version'],              icon: 'clientcide-libraries.png' },
 		'Crafty':               {version: ['Crafty', 'init'],                     icon: 'crafty.png'               },
+		'd3.js':                {version: ['d3', 'version']                                                        },
 		'DHTMLX':               {version: ['dhtmlx'],                             icon: 'dhtmlx.png'               },
 		'Dojo': {
 			version: function() {
@@ -22,6 +23,7 @@
 			},
 			icon: 'dojo.png'
 		},
+		'Ember':                {version: ['Ember', 'VERSION']                                                     },
 		'Ext JS':               {version: ['Ext', 'version'],                     icon: 'ext-js.png'               },
 		'Glow':                 {version: ['glow', 'VERSION'],                    icon: 'glow.png'                 },
 		'JavaScriptMVC':        {version: ['steal', 'fn'],                        icon: 'javascriptmvc.png'        },
