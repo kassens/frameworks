@@ -1,6 +1,6 @@
 {
 	"name": "Frameworks",
-	"version": "1.3",
+	"version": "2.0",
 	"icons": {
 		"16": "images/logo16.png",
 		"48": "images/logo48.png",
@@ -16,8 +16,5 @@
 			"run_at": "document_end"
 		}
 	],
-	"page_action": {
-		"default_icon": "images/unknown.png",
-		"default_title": "Framework"
-	}
+	"page_action": {}
 }
