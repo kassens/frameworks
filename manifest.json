@@ -1,13 +1,17 @@
 {
 	"name": "Frameworks",
-	"version": "2.0.1",
+	"version": "2.0.2",
+	"manifest_version": 2,
 	"icons": {
 		"16": "images/logo16.png",
 		"48": "images/logo48.png",
 		"128": "images/logo128.png"
 	},
 	"description": "Displays JavaScript frameworks used on a site.",
-	"background_page": "background.html",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"web_accessible_resources": ["inject.js"],
 	"permissions": ["tabs"],
 	"content_scripts": [
 		{
