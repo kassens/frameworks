@@ -30,7 +30,7 @@ function createIcon(text) {
   var w = 19;
   var h = 19;
   var rad = 3; // border radius
-  var lw = 1 // line width
+  var lw = 1; // line width
   var hlw = lw/2; // half line width
 
   var t = hlw + 1;
