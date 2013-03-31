@@ -11,6 +11,7 @@ Supported Frameworks
 ====================
 
 [ActiveJS](http://activejs.org/)\*,
+[AngularJS](http://angularjs.org/),
 [Backbone.js](http://documentcloud.github.com/backbone/),
 [Base2](http://code.google.com/p/base2/),
 [Clientcide Libraries](http://www.clientcide.com/wiki/),
@@ -56,3 +57,4 @@ Authors
 * [Jan Kassens](https://github.com/kassens)
 * [Fabian Beiner](https://github.com/FabianBeiner)
 * [Anton Suprun](https://github.com/kpobococ)
+* [Pascal Hartig](https://github.com/passy)
