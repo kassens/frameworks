@@ -16,6 +16,7 @@
     'Base2':                { abbr: 'Base', version: ['base2', 'version']                   },
     'Clientcide Libraries': { abbr: 'Moo',  version: ['Clientcide', 'version']              },
     'Crafty':               { abbr: 'Crf',  version: ['Crafty', 'init']                     },
+    'Cufon':                { abbr: 'Cuf',  version: ['Cufon']                              },
     'D3':                   { abbr: 'D3',   version: ['d3', 'version']                      },
     'DHTMLX':               { abbr: 'DHT',  version: ['dhtmlx']                             },
     'Dojo':                 { abbr: 'Dojo', version: function() {
@@ -28,6 +29,7 @@
     'jQuery':               { abbr: 'jQ',   version: ['jQuery', 'fn', 'jquery']             },
     'jQuery UI':            { abbr: 'jQUI', version: ['$', 'ui', 'version']                 },
     'Midori':               { abbr: 'Mid',  version: ['midori', 'domReady']                 },
+    'Modernizr':            { abbr: 'Mzr',  version: ['Modernizr', '_version']              },
     'MochiKit':             { abbr: 'MK',   version: ['MochiKit', 'MochiKit', 'VERSION']    },
     'MooTools A.R.T.':      { abbr: 'Moo',  version: ['ART', 'version']                     },
     'MooTools Core':        { abbr: 'Moo',  version: ['MooTools', 'version']                },
@@ -36,6 +38,7 @@
     'Prototype':            { abbr: 'Pro',  version: ['Prototype', 'Version']               },
     'Qooxdoo':              { abbr: 'Qxd',  version: ['qx', '$$libraries', 'qx', 'version'] },
     'Raphaël':              { abbr: 'Rël',  version: ['Raphael', 'version']                 },
+    'RequireJS':            { abbr: 'rjs',  version: ['requirejs', 'version']               },
     'Rico':                 { abbr: 'Ric',  version: ['Rico', 'Version']                    },
     'RightJS':              { abbr: 'Rig',  version: ['RightJS', 'version']                 },
     'Sammy.js':             { abbr: 'Sam',  version: ['Sammy', 'VERSION']                   },
