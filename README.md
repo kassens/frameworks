@@ -26,6 +26,7 @@ Supported Frameworks
 [JavaScriptMVC](http://javascriptmvc.com/)\*,
 [jQuery](http://jquery.com/),
 [jQuery UI](http://jqueryui.com/),
+[Knockout.js](http://knockoutjs.com),
 [Midori](http://www.midorijs.com/)\*,
 [Modernizr](http://modernizr.com/),
 [MochiKit](http://mochi.github.com/mochikit/),
