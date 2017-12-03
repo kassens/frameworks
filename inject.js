@@ -28,6 +28,7 @@
     'JavaScriptMVC':        { abbr: 'MVC',  version: ['steal', 'fn']                        },
     'jQuery':               { abbr: 'jQ',   version: ['jQuery', 'fn', 'jquery']             },
     'jQuery UI':            { abbr: 'jQUI', version: ['$', 'ui', 'version']                 },
+    'Knockout.js':          { abbr: 'ko',   version: ['ko', 'version']                      },
     'Midori':               { abbr: 'Mid',  version: ['midori', 'domReady']                 },
     'Modernizr':            { abbr: 'Mzr',  version: ['Modernizr', '_version']              },
     'MochiKit':             { abbr: 'MK',   version: ['MochiKit', 'MochiKit', 'VERSION']    },
